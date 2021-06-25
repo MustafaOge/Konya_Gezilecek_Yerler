@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650851444795",
+    "project_id": "konya-gezilecek-yerler",
+    "storage_bucket": "konya-gezilecek-yerler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650851444795:android:8a6bb1e78cc2f24f9a541e",
+        "android_client_info": {
+          "package_name": "com.obito.konya_gezilecek_yerler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650851444795-iobnq6qocsqsbf4opourkh2kjuksq3ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFPvGIACO6uv0Ou1BWU8HSiOurayv9DWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650851444795-iobnq6qocsqsbf4opourkh2kjuksq3ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,19 +1,27 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:juxtapose/juxtapose.dart';
 
-class ProfilSayfasi extends StatelessWidget {
+class ProfilSayfasi extends StatefulWidget {
   final String mekanAd;
   final String gonderiResimLinki;
   final String anaResimlinki;
   final String bilgiYazi;
 
-  const ProfilSayfasi({
-    Key key,
+  ProfilSayfasi({
     this.mekanAd,
     this.gonderiResimLinki,
     this.anaResimlinki,
     this.bilgiYazi,
-  }) : super(key: key);
+  });
+
+  @override
+  _ProfilSayfasiState createState() => _ProfilSayfasiState();
+}
+
+class _ProfilSayfasiState extends State<ProfilSayfasi> {
+  final _firestore = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -25,19 +33,33 @@ class ProfilSayfasi extends StatelessWidget {
             children: <Widget>[
               Container(
                 height: 180.0,
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    image: DecorationImage(
-                        image: NetworkImage(anaResimlinki), fit: BoxFit.cover)),
+                child: Juxtapose(
+                  dividerThickness: 3.0,
+                  thumbSize: Size(16, 16),
+                  backgroundColor: Color(0xFF012747),
+                  foregroundWidget: FittedBox(
+                    fit: BoxFit.fill,
+                    child: Image(
+                      image: NetworkImage(widget.anaResimlinki),
+                    ),
+                  ),
+                  backgroundWidget: FittedBox(
+                    fit: BoxFit.fill,
+                    child: Image(
+                      image: NetworkImage(widget.gonderiResimLinki),
+                    ),
+                  ),
+                ),
               ),
               IconButton(
-                  icon: Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    Navigator.pop(context, true);
-                  }),
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.pop(context, true);
+                },
+              ),
             ],
           ),
           Column(
@@ -55,7 +77,7 @@ class ProfilSayfasi extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       child: Text(
-                        mekanAd,
+                        widget.mekanAd,
                         style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
@@ -90,12 +112,23 @@ class ProfilSayfasi extends StatelessWidget {
                         width: 6.0,
                       )),
                 ),
-                child: Text(
-                  bilgiYazi,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 18.0,
-                  ),
+                child: StreamBuilder(
+                  stream: FirebaseFirestore.instance
+                      .collection('deneme')
+                      .doc(widget.bilgiYazi)
+                      .snapshots(),
+                  builder: (context, AsyncSnapshot<DocumentSnapshot> snapshot) {
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    }
+                    var userDocument = snapshot.data;
+                    return Text(
+                      userDocument["bilgi"],
+                      style: TextStyle(fontSize: 20.0),
+                    );
+                  },
                 ),
               ),
             ],

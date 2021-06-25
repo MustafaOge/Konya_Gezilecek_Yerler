@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:konya_gezilecek_yerler/bilgiSayfasi.dart';
 
-import 'bilgiSayfasi.dart';
-
 class GonderiKarti extends StatelessWidget {
   final String anaResim;
   final String bilgiYazi;
   final String gonderiResimLinki;
   final String mekan;
 
-  const GonderiKarti(
-      {Key key,
-      this.anaResim,
-      this.bilgiYazi,
-      this.gonderiResimLinki,
-      this.mekan})
-      : super(key: key);
+  GonderiKarti({
+    Key key,
+    this.anaResim,
+    this.bilgiYazi,
+    this.gonderiResimLinki,
+    this.mekan,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,16 +49,12 @@ class GonderiKarti extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        SizedBox(
-                          width: 12.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[],
-                        ),
-                      ],
+                    SizedBox(
+                      width: 12.0,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[],
                     ),
                   ],
                 ),

@@ -1,4 +1,4 @@
-String Mevlana =
+String mevlana =
     """Mevlânâ Müzesi, Konya'da bulunan, eskiden Mevlâna'nın dergâhı olan yapı kompleksinde 1926 yılından
  beri faaliyet gösteren müzedir. Mevlana Türbesi olarak da anılır.(Yeşil Kubbe) denilen Mevlana'nın türbesi
  dört fil ayağı (kalın sütun) üzerine yapılmıştır. O günden sonra yapı faaliyetler hiç bitmemiş, 19. yüzyılın
@@ -64,8 +64,32 @@ birbirinden heybetli dağlarını tepelerini düşünürsek Alaaddin Tepesi'ne t
 Birçok medeniyetin Alaaddin Tepesi'nde hüküm sürdüğü bilinmektedir. Frig, Hellenistik, Roma, Bizans, Selçuklu ve Osmanlı
 zamanında yerleşim alanı olarak kullanılmıştır. Günümüzde ise halk tarafından mesire yeri olarak kullanılmaktadır ve şehrin
 en merak edilen noktaların biridir. Konya'ya bir gezi planlıyorsanız Alaaddin Tepesi'ni mutlaka ziyaret etmelisiniz.
-Tabii ünü ülke sınırlarını aşmış olan Mevlana Türbesi'ni de ziyaret yerleriniz arasına mutlaka dahil etmelisiniz. """;
+Tabii ünü ülke sınırlarını aşmış olan Mevlana Türbesi'ni de ziyaret 
+yerleriniz arasına mutlaka dahil etmelisiniz.""";
 
 String hakkinda = """Bu uygulama Dr. Öğretim Üyesi Ahmet Cevahir ÇINAR
 tarafından yürütülen 3301456 kodlu MOBİL PROGRAMLAMA dersi kapsamında
 193311047 numaralı Mustafa Öğe tarafından 28 Nisan 2021 günü yapılmıştır.""";
+
+String konya =
+    """Konya Türkiye 'nin yüz ölçümü bakımından en büyük ili ve enkalabalık yedinci şehridir.31 ilçeden oluşan Konya'da
+TÜİK'in 2020 verilerine göre 2.250.020 kişi yaşamaktadır. 1830'da kurulan Konya Belediyesi 1987'de çıkarılan 3399 sayılı
+yasa gereğince "Büyükşehir" statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir.
+2014'te 6360 sayılı kanun ile büyükşehir belediyesinin sınırları il mülki sınırları olmuştur Ekonomik açıdan Türkiye'nin 
+gelişmiş kentlerinden biri olan Konya doğal ve tarihsel zenginlikleriyle de önem taşır. Dünyanın en eski yerleşim yerlerinden
+biri olan Çatalhöyük, UNESCO Dünya Miras Listesine alınmıştır. Şehir, Anadolu Selçukluları'nın başkentliğini yapmıştır.
+Büyük mutasavvıf Hz. Mevlana'nın türbesi Konya'dadır. Türkiye'nin en önemli sanayi kentlerindendir.""";
+
+String sille =
+    """Baraj Sille Çayı üzerinde sulama ve taşkın kontrol amacı ile 1953-1960 yılları arasında inşa edilmiş bir barajdır.
+Kaya gövde dolgu tipi olan barajın bölge hacmi 320.000 m3 akarsu yatağında yüksekliği 39 metredir. Normal
+su kotunda göl hacmi 3,10 hm3 normal su kotunda göl alanı 0,20 km2 dır 260 hektarlık bir alana sulama hizmeti vermektedir.
+Türkiye’nin en büyük parklarından biri olan Sille Baraj Park, günlük yaşamın stresinden uzaklaşıp nefes almak isteyen binlerce
+insan Sille’nin temiz havasında aileleriyle birlikte hoşca vakit geçirmek için baraj parka akın ediyor.
+Konyalıları su ile buluşturan ve şehrin yeni cazibe alanı olan baraj parkta, izci kampı merkezi, tekne gezinti alanı,
+uçurtma tepesi, çay bahçesi, restoran, mescid, iskele, ahşap gezinti yolları, çim amfi, çocuk oyun alanları, spor alanları
+gibi farklı etkinlik alanları yer alıyor. Sille Baraj Park, 1.985.000 m²’lik alanı ile Türkiye’de yapılmış en büyük parklardan biri.
+Park içerisinde 221.000 m² yüzey alanı ve 2.500.000 m³’lük tam doluluk kapasitesi ile Sille Himmet Ölçmen Barajı yer alıyor.
+Baraj çevresinde piknik alanları, yürüyüş parkurları, çocuk oyun alanları, tırmanma parkurları yer alıyor. Öğrenciler ve izcilere yönelik
+olarak kullanılması amacıyla kamp alanları oluşturulan park içerisindeki gölette kayıkla gezinti yapılabiliyor.
+""";
